@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:DeactivateMFADevice",
+        "iam:DeleteAccessKey",
+        "iam:DeleteVirtualMFADevice",
+        "iam:EnableMFADevice",
+        "iam:ResyncMFADevice",
+        "iam:UpdateAccessKey",
+        "iam:CreateVirtualMFADevice",
+        "iam:CreateAccessKey"
+      ],
+      "Resource": [
+        "arn:aws:iam::${account_id}:mfa/${iam_username}",
+        "arn:aws:iam::${account_id}:user/${iam_username}",
+        "arn:aws:iam::${account_id}:sms-mfa/${iam_username}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "athena:TagResource",
+        "athena:UntagResource",
+        "athena:Create*",
+        "athena:Start*",
+        "athena:Stop*",
+        "athena:Update*",
+        "athena:Delete*"
+      ],
+      "Resource": [
+        "arn:aws:athena:ap-south-1:${account_id}:workgroup/*",
+        "arn:aws:athena:ap-south-1:${account_id}:datacatalog/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "elasticmapreduce:DeleteEditor",
+        "elasticmapreduce:PutManagedScalingPolicy",
+        "elasticmapreduce:OpenEditorInConsole",
+        "elasticmapreduce:PutAutoScalingPolicy",
+        "elasticmapreduce:CreateEditor",
+        "elasticmapreduce:ModifyCluster",
+        "elasticmapreduce:SetTerminationProtection",
+        "elasticmapreduce:AddInstanceGroups",
+        "elasticmapreduce:StartEditor",
+        "elasticmapreduce:RemoveManagedScalingPolicy",
+        "elasticmapreduce:RemoveAutoScalingPolicy",
+        "elasticmapreduce:ModifyInstanceGroups",
+        "elasticmapreduce:StopEditor",
+        "elasticmapreduce:RemoveTags",
+        "elasticmapreduce:AddJobFlowSteps",
+        "elasticmapreduce:AddTags",
+        "elasticmapreduce:TerminateJobFlows",
+        "elasticmapreduce:CancelSteps"
+      ],
+      "Resource": [
+        "arn:aws:elasticmapreduce:ap-south-1:${account_id}:editor/*",
+        "arn:aws:elasticmapreduce:ap-south-1:${account_id}:cluster/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "elasticmapreduce:DeleteSecurityConfiguration",
+        "elasticmapreduce:CreateSecurityConfiguration",
+        "elasticmapreduce:RunJobFlow"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "firehose:DeleteDeliveryStream",
+        "firehose:PutRecord",
+        "firehose:StartDeliveryStreamEncryption",
+        "firehose:CreateDeliveryStream",
+        "firehose:PutRecordBatch",
+        "firehose:StopDeliveryStreamEncryption",
+        "firehose:TagDeliveryStream",
+        "firehose:UpdateDestination",
+        "firehose:UntagDeliveryStream"
+      ],
+      "Resource": "arn:aws:firehose:ap-south-1:${account_id}:deliverystream/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "glue:BatchCreatePartition",
+        "glue:DeleteDatabase",
+        "glue:StartMLEvaluationTaskRun",
+        "glue:BatchDeletePartition",
+        "glue:DeleteTableVersion",
+        "glue:UpdateTable",
+        "glue:DeleteTable",
+        "glue:CreateUserDefinedFunction",
+        "glue:DeleteMLTransform",
+        "glue:ImportCatalogToGlue",
+        "glue:CreatePartition",
+        "glue:UntagResource",
+        "glue:PutResourcePolicy",
+        "glue:UpdatePartition",
+        "glue:TagResource",
+        "glue:StartImportLabelsTaskRun",
+        "glue:UpdateDatabase",
+        "glue:StartExportLabelsTaskRun",
+        "glue:CreateTable",
+        "glue:DeleteResourcePolicy",
+        "glue:UpdateUserDefinedFunction",
+        "glue:CancelMLTaskRun",
+        "glue:DeleteUserDefinedFunction",
+        "glue:CreateConnection",
+        "glue:StartMLLabelingSetGenerationTaskRun",
+        "glue:DeleteConnection",
+        "glue:UpdateConnection",
+        "glue:UseMLTransforms",
+        "glue:CreateDatabase",
+        "glue:BatchDeleteConnection",
+        "glue:BatchDeleteTableVersion",
+        "glue:BatchDeleteTable",
+        "glue:UpdateMLTransform",
+        "glue:DeletePartition"
+      ],
+      "Resource": [
+        "arn:aws:glue:ap-south-1:${account_id}:crawler/*",
+        "arn:aws:glue:ap-south-1:${account_id}:userDefinedFunction/*/*",
+        "arn:aws:glue:ap-south-1:${account_id}:devendpoint/*",
+        "arn:aws:glue:ap-south-1:${account_id}:job/*",
+        "arn:aws:glue:ap-south-1:${account_id}:tableVersion/*/*/*",
+        "arn:aws:glue:ap-south-1:${account_id}:trigger/*",
+        "arn:aws:glue:ap-south-1:${account_id}:catalog",
+        "arn:aws:glue:ap-south-1:${account_id}:table/*/*",
+        "arn:aws:glue:ap-south-1:${account_id}:database/*",
+        "arn:aws:glue:ap-south-1:${account_id}:workflow/*",
+        "arn:aws:glue:ap-south-1:${account_id}:connection/*",
+        "arn:aws:glue:ap-south-1:${account_id}:mlTransform/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "glue:CreateSecurityConfiguration",
+        "glue:PutWorkflowRunProperties",
+        "glue:CreateClassifier",
+        "glue:CreateTrigger",
+        "glue:StopTrigger",
+        "glue:StopCrawler",
+        "glue:DeleteJob",
+        "glue:DeleteWorkflow",
+        "glue:UpdateCrawler",
+        "glue:StartTrigger",
+        "glue:DeleteDevEndpoint",
+        "glue:CreateJob",
+        "glue:UpdateWorkflow",
+        "glue:CreateScript",
+        "glue:UpdateTrigger",
+        "glue:PutDataCatalogEncryptionSettings",
+        "glue:StartCrawler",
+        "glue:ResetJobBookmark",
+        "glue:UpdateJob",
+        "glue:StartWorkflowRun",
+        "glue:StopCrawlerSchedule",
+        "glue:DeleteClassifier",
+        "glue:DeleteCrawler",
+        "glue:BatchStopJobRun",
+        "glue:CreateCrawler",
+        "glue:DeleteSecurityConfiguration",
+        "glue:GetMapping",
+        "glue:UpdateCrawlerSchedule",
+        "glue:CreateDevEndpoint",
+        "glue:StartCrawlerSchedule",
+        "glue:UpdateDevEndpoint",
+        "glue:StartJobRun",
+        "glue:UpdateClassifier",
+        "glue:DeleteTrigger",
+        "glue:CreateWorkflow",
+        "glue:CreateMLTransform"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

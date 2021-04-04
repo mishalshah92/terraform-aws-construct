@@ -1,0 +1,244 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "sqs:DeleteMessage",
+        "s3:DeleteObjectVersion",
+        "sqs:SendMessageBatch",
+        "sqs:UntagQueue",
+        "s3:ReplicateTags",
+        "s3:RestoreObject",
+        "s3:ReplicateObject",
+        "sqs:RemovePermission",
+        "s3:AbortMultipartUpload",
+        "sqs:DeleteMessageBatch",
+        "s3:PutObjectTagging",
+        "s3:DeleteObject",
+        "sqs:ChangeMessageVisibilityBatch",
+        "s3:PutObjectAcl",
+        "sqs:SetQueueAttributes",
+        "s3:DeleteObjectTagging",
+        "sqs:ChangeMessageVisibility",
+        "apigateway:*",
+        "sqs:SendMessage",
+        "s3:PutObjectVersionTagging",
+        "s3:DeleteObjectVersionTagging",
+        "s3:PutObjectLegalHold",
+        "s3:BypassGovernanceRetention",
+        "s3:PutObject",
+        "sqs:TagQueue",
+        "s3:ObjectOwnerOverrideToBucketOwner",
+        "sqs:AddPermission",
+        "s3:PutObjectRetention",
+        "appconfig:*",
+        "s3:PutObjectVersionAcl",
+        "sqs:PurgeQueue",
+        "sqs:DeleteQueue",
+        "sqs:CreateQueue",
+        "eks:*",
+        "s3:ReplicateDelete"
+      ],
+      "Resource": [
+        "arn:aws:eks:ap-south-1:${account_id}:cluster/*",
+        "arn:aws:eks:ap-south-1:${account_id}:nodegroup/*/*/*",
+        "arn:aws:eks:ap-south-1:${account_id}:fargateprofile/*/*/*",
+        "arn:aws:appconfig:ap-south-1:${account_id}:application/*/environment/*",
+        "arn:aws:appconfig:ap-south-1:${account_id}:application/*/configurationprofile/*",
+        "arn:aws:appconfig:ap-south-1:${account_id}:deploymentstrategy/*",
+        "arn:aws:apigateway:ap-south-1::*",
+        "arn:aws:s3:::*/*",
+        "arn:aws:sqs:ap-south-1:${account_id}:*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": "appconfig:*",
+      "Resource": "arn:aws:appconfig:ap-south-1:${account_id}:application/*"
+    },
+    {
+      "Sid": "VisualEditor2",
+      "Effect": "Allow",
+      "Action": [
+        "logs:GetLogRecord",
+        "cognito-identity:CreateIdentityPool",
+        "sns:Unsubscribe",
+        "cognito-identity:GetOpenIdToken",
+        "sns:CheckIfPhoneNumberIsOptedOut",
+        "sns:OptInPhoneNumber",
+        "logs:ListLogDeliveries",
+        "sns:SetEndpointAttributes",
+        "sns:ListEndpointsByPlatformApplication",
+        "sns:DeletePlatformApplication",
+        "logs:CancelExportTask",
+        "sns:SetPlatformApplicationAttributes",
+        "cognito-identity:DeleteIdentities",
+        "cognito-identity:DescribeIdentity",
+        "logs:DescribeDestinations",
+        "s3:PutAccountPublicAccessBlock",
+        "sns:GetPlatformApplicationAttributes",
+        "logs:StopQuery",
+        "sns:GetSubscriptionAttributes",
+        "sns:DeleteEndpoint",
+        "sns:ListPhoneNumbersOptedOut",
+        "logs:CreateLogDelivery",
+        "sns:GetEndpointAttributes",
+        "logs:PutResourcePolicy",
+        "logs:DescribeExportTasks",
+        "logs:GetQueryResults",
+        "logs:UpdateLogDelivery",
+        "s3:CreateJob",
+        "eks:ListClusters",
+        "sns:GetSMSAttributes",
+        "cognito-identity:ListIdentityPools",
+        "sns:ListTopics",
+        "sns:CreatePlatformEndpoint",
+        "logs:GetLogDelivery",
+        "cognito-identity:GetId",
+        "logs:DeleteResourcePolicy",
+        "appconfig:ListDeploymentStrategies",
+        "cognito-identity:SetIdentityPoolRoles",
+        "logs:DeleteLogDelivery",
+        "logs:PutDestination",
+        "logs:DescribeResourcePolicies",
+        "eks:CreateCluster",
+        "logs:DescribeQueries",
+        "logs:PutDestinationPolicy",
+        "sns:CreatePlatformApplication",
+        "sns:SetSMSAttributes",
+        "logs:TestMetricFilter",
+        "sns:ListSubscriptions",
+        "logs:DeleteDestination",
+        "sns:SetSubscriptionAttributes",
+        "appconfig:ListApplications",
+        "cognito-identity:UnlinkIdentity",
+        "sns:ListPlatformApplications",
+        "cognito-identity:GetCredentialsForIdentity"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "VisualEditor3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateAccessPoint",
+        "s3:PutAnalyticsConfiguration",
+        "s3:PutAccelerateConfiguration",
+        "s3:DeleteAccessPoint",
+        "s3:CreateBucket",
+        "s3:PutEncryptionConfiguration",
+        "s3:DeleteBucketWebsite",
+        "s3:DeleteJobTagging",
+        "s3:PutBucketTagging",
+        "s3:DeleteBucketOwnershipControls",
+        "s3:PutLifecycleConfiguration",
+        "s3:UpdateJobPriority",
+        "s3:PutBucketAcl",
+        "s3:DeleteBucket",
+        "s3:PutBucketVersioning",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:PutMetricsConfiguration",
+        "s3:PutBucketOwnershipControls",
+        "s3:PutReplicationConfiguration",
+        "s3:PutJobTagging",
+        "s3:UpdateJobStatus",
+        "s3:PutBucketCORS",
+        "s3:DeleteBucketPolicy",
+        "s3:PutInventoryConfiguration",
+        "s3:PutBucketNotification",
+        "s3:PutBucketWebsite",
+        "s3:PutBucketRequestPayment",
+        "s3:PutBucketLogging",
+        "appconfig:*",
+        "s3:PutBucketPolicy",
+        "s3:DeleteAccessPointPolicy",
+        "s3:PutBucketObjectLockConfiguration",
+        "s3:PutAccessPointPolicy"
+      ],
+      "Resource": [
+        "arn:aws:s3:::*",
+        "arn:aws:s3:ap-south-1:${account_id}:accesspoint/*",
+        "arn:aws:s3:ap-south-1:${account_id}:job/*",
+        "arn:aws:appconfig:ap-south-1:${account_id}:application/*/configurationprofile/*/hostedconfigurationversion/*",
+        "arn:aws:appconfig:ap-south-1:${account_id}:application/*/environment/*/deployment/*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor4",
+      "Effect": "Allow",
+      "Action": "cognito-identity:*",
+      "Resource": "arn:aws:cognito-identity:ap-south-1:${account_id}:identitypool/*"
+    },
+    {
+      "Sid": "VisualEditor5",
+      "Effect": "Allow",
+      "Action": "sns:*",
+      "Resource": "arn:aws:sns:ap-south-1:${account_id}:*"
+    },
+    {
+      "Sid": "VisualEditor6",
+      "Effect": "Allow",
+      "Action": "cognito-sync:*",
+      "Resource": [
+        "arn:aws:cognito-sync:ap-south-1:${account_id}:identitypool/*/identity/*/dataset/*",
+        "arn:aws:cognito-sync:ap-south-1:${account_id}:identitypool/*",
+        "arn:aws:cognito-sync:ap-south-1:${account_id}:identitypool/*/identity/*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor7",
+      "Effect": "Allow",
+      "Action": "lambda:*",
+      "Resource": [
+        "arn:aws:lambda:ap-south-1:${account_id}:function:*:*",
+        "arn:aws:lambda:ap-south-1:${account_id}:layer:*:*",
+        "arn:aws:lambda:ap-south-1:${account_id}:layer:*",
+        "arn:aws:lambda:ap-south-1:${account_id}:event-source-mapping:*",
+        "arn:aws:lambda:ap-south-1:${account_id}:function:*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "logs:*",
+      "Resource": [
+        "arn:aws:logs:ap-south-1:${account_id}:log-group:*:log-stream:*",
+        "arn:aws:logs:ap-south-1:${account_id}:log-group:*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "cloudwatch:*",
+      "Resource": [
+        "arn:aws:cloudwatch:ap-south-1:${account_id}:alarm:*",
+        "arn:aws:cloudwatch::${account_id}:dashboard/*",
+        "arn:aws:cloudwatch:ap-south-1:${account_id}:insight-rule/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateInstanceProfile",
+        "iam:DeleteInstanceProfile",
+        "iam:UntagRole",
+        "iam:TagRole",
+        "iam:UpdateRoleDescription",
+        "iam:CreateRole",
+        "iam:UpdateRole",
+        "iam:DeleteRole",
+        "iam:PutRolePolicy",
+        "iam:AttachRolePolicy",
+        "iam:DeleteRolePolicy",
+        "iam:DeleteServiceLinkedRole",
+        "iam:CreatePolicyVersion"
+      ],
+      "Resource": [
+        "arn:aws:iam::322338739230:instance-profile/*",
+        "arn:aws:iam::322338739230:role/*",
+        "arn:aws:iam::322338739230:policy/*"
+      ]
+    }
+  ]
+}
