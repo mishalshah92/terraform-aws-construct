@@ -1,0 +1,51 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "appconfig:*",
+        "cloudwatch:*",
+        "ds:DescribeDirectories",
+        "ec2:AttachVolume",
+        "ec2:CopySnapshot",
+        "ec2:EnableEbsEncryptionByDefault",
+        "ec2:RunScheduledInstances",
+        "ec2:ResetEbsDefaultKmsKeyId",
+        "ec2:ModifyImageAttribute",
+        "ec2:ReleaseHosts",
+        "ec2:ReplaceIamInstanceProfileAssociation",
+        "ec2:CreatePlacementGroup",
+        "ec2:ModifySnapshotAttribute",
+        "ec2:StartInstances",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:DetachVolume",
+        "ec2:RebootInstances",
+        "ec2:DescribeIamInstanceProfileAssociations",
+        "ec2:CreateTags",
+        "ec2:StopInstances",
+        "ec2:CreateLaunchTemplateVersion",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DisassociateIamInstanceProfile",
+        "ec2:ModifyLaunchTemplate",
+        "ec2:AssociateIamInstanceProfile",
+        "identitystore:*",
+        "logs:*",
+        "rds:StopDBInstance",
+        "rds:StartDBInstance",
+        "rds:StopActivityStream",
+        "rds:CreateDBSnapshot",
+        "rds:RebootDBInstance",
+        "rds:CreateDBClusterSnapshot"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": "ap-south-1"
+        }
+      }
+    }
+  ]
+}

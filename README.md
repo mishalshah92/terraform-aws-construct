@@ -11,20 +11,24 @@ These modules deploy bunch of resources with all required configurations conside
 
 ## Modules
 
-- [client-vpn-endpoint](src/client-vpn-endpoint)
-- [db-subnet-groups](src/db-subnet-groups)
-- [docdb](src/docdb)
-- [ec2-launch-template](src/ec2-launch-template)  
-- [eks-master](src/eks-master)    
-- [eks-node-group](src/eks-node-group)
-- [iam](src/iam)
-- [iam_membership](src/iam_membership)
-- [iam_users](src/iam_users)   
-- [rds-postgresql-db](src/rds-postgresql-db)   
-- [redis-elasticache](src/redis-elasticache)
-- [resource-group](src/resource-group)    
-- [vpc](src/vpc)    
-- [vpc-peering](src/vpc-peering)     
+- [client-vpn-endpoint](terraform/client-vpn-endpoint)
+- [db-subnet-groups](terraform/db-subnet-groups)
+- [docdb](terraform/docdb)
+- [ec2-launch-template](terraform/ec2-launch-template)  
+- [eks-master](terraform/eks-master)    
+- [eks-node-group](terraform/eks-node-group)
+- [iam](terraform/iam)
+- [iam-groups](terraform/iam-groups)
+- [iam-policies](terraform/iam-policies)
+- [iam-roles](terraform/iam-roles)   
+- [iam-users](terraform/iam-users)
+- [rds-postgresql-db](terraform/rds-postgresql-db)   
+- [redis-elasticache](terraform/redis-elasticache)
+- [resource-group](terraform/resource-group)
+- [sso](terraform/sso)
+- [vpc](terraform/vpc)
+- [vpc-devops](terraform/vpc-devops)
+- [vpc-peering](terraform/vpc-peering)     
   
 ## Directory structure
 

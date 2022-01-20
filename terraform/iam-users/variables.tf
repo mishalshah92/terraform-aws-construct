@@ -1,0 +1,69 @@
+# general
+variable "region" {
+  type    = string
+  default = "ap-south-1"
+}
+
+# Users
+
+variable "name" {
+  type = string
+}
+
+variable "groups" {
+  type    = list(string)
+  default = []
+}
+
+variable "policies" {
+  type    = list(string)
+  default = []
+}
+
+# tags
+
+variable "customer" {
+  type = string
+}
+
+variable "owner" {
+  type = string
+}
+
+variable "email" {
+  type = string
+}
+
+variable "env" {
+  type = string
+}
+
+variable "git_commit" {
+  type = string
+}
+
+variable "repo" {
+  type = string
+}
+
+variable "tool" {
+  description = "Automation tool info"
+  default     = "Managed by Terraform"
+}
+
+variable "resource_group" {
+  type = string
+}
+
+variable "deployment" {
+  type = string
+}
+
+variable "module" {
+  type = string
+}
+
+variable "tags" {
+  type    = map(string)
+  default = {}
+}
