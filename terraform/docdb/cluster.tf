@@ -20,7 +20,7 @@ resource "aws_docdb_cluster_parameter_group" "docdb_parameter_group" {
 }
 
 module "docdb" {
-  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/docdb-cluster?ref=1.7"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/docdb-cluster?ref=1.7"
 
   name            = local.db_name
   engine_version  = var.engine_version

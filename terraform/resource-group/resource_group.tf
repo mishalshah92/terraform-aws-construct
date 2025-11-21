@@ -1,5 +1,5 @@
 module "resource_group" {
-  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/resource-group?ref=1.8"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/resource-group?ref=1.8"
 
   name                  = "${var.customer}-${var.env}"
   resource_type_filters = var.resource_type_filters

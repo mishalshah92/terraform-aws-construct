@@ -1,5 +1,5 @@
 module "rg_kms_key" {
-  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/kms-key-generator?ref=1.8"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/kms-key-generator?ref=1.8"
 
   customer_master_key_spec = var.customer_master_key_spec
   description              = "This key is for Resource Group ${module.resource_group.name}'s common resources"

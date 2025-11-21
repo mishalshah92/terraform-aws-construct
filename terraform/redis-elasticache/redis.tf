@@ -19,7 +19,7 @@ resource "aws_elasticache_parameter_group" "redis_parameter_group" {
 }
 
 module "redis-elasticache" {
-  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/redis-elasticache?ref=1.7"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/redis-elasticache?ref=1.7"
 
   name        = local.redis_name
   description = var.description

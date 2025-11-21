@@ -31,7 +31,7 @@
 //}
 //
 //module "eks-node-group" {
-//  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/eks-node-group?ref=mishal/add-eks"
+//  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/eks-node-group?ref=mishal/add-eks"
 //
 //  count = length(local.node_groups)
 //

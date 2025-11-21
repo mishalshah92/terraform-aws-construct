@@ -6,7 +6,7 @@ resource "aws_key_pair" "eks_node_keypair" {
 }
 
 module "eks-node-group" {
-  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/eks-node-group?ref=1.1"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/eks-node-group?ref=1.1"
 
   cluster_name    = var.cluster_name
   node_group_name = var.node_group_name

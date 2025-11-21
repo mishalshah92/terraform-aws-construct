@@ -1,5 +1,5 @@
 module "docdb_instances" {
-  source = "git::https://github.com/cloudops92/terraform-aws-base-modules.git//src/docdb-cluster-instance?ref=1.7"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/docdb-cluster-instance?ref=1.7"
 
   for_each = var.db_instances
 

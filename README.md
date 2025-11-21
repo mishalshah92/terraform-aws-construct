@@ -1,13 +1,23 @@
-# Terraform AWS Modules
+# Terraform AWS Construct
 
-Terraform modules to deploy resources on AWS cloud with its possible configurations.
-These modules deploy bunch of resources with all required configurations considering monitoring, availability and reliability.    
+This repo is a collection of opinionated, ready-to-deploy AWS infrastructure compositions built entirely 
+using vanilla Terraform modules.
+This repository provides higher-level, production-grade constructs that assemble reusable modules 
+into complete, deployable architectures. It acts as the integration layer — consuming modules from 
+upstream Terraform module repositories and composing them into practical end-to-end solutions.
+
+**Key features:**
+- Composes AWS architectures using standard Terraform modules.
+- Provides reusable, versioned infrastructure constructs.
+- Ensures consistent patterns across environments.
+- Simplifies deployment of complex AWS setups with minimal configuration.
+- Use this repo when you want modular, maintainable, and production-ready AWS infrastructure built on top of Terraform best practices.
 
 - **Terraform version** >= `0.14`
 
 ## Base Modules
 
-- [terraform-aws-base-modules](https://github.com/cloudops92/terraform-aws-base-modules)
+- [terraform-aws-core-modules](https://github.com/mishalshah92/terraform-aws-core-modules)
 
 ## Modules
 
@@ -32,7 +42,7 @@ These modules deploy bunch of resources with all required configurations conside
   
 ## Directory structure
 
-Terraform directory hold the various modules code.
+Terraform directory holds the various modules code.
 
 ```
 terraform
@@ -53,7 +63,7 @@ terraform
 
 ### Overview
 
-- **Maintainer**: mishalshah1992@gmail.com
+- **Maintainer**: mishalshah92@gmail.com
 
 ## Releases
 
