@@ -1,10 +1,10 @@
 # Terraform AWS Construct
 
 This repo is a collection of opinionated, ready-to-deploy AWS infrastructure compositions built entirely 
-using vanilla Terraform modules.
-This repository provides higher-level, production-grade constructs that assemble reusable modules 
-into complete, deployable architectures. It acts as the integration layer — consuming modules from 
-upstream Terraform module repositories and composing them into practical end-to-end solutions.
+using vanilla Terraform modules. This repository provides higher-level, production-grade constructs that 
+assemble reusable modules into complete, deployable architectures. It acts as the integration layer 
+— consuming modules from upstream Terraform module repositories and composing them into practical end-to-end 
+solutions.
 
 **Key features:**
 - Composes AWS architectures using standard Terraform modules.
@@ -13,9 +13,9 @@ upstream Terraform module repositories and composing them into practical end-to-
 - Simplifies deployment of complex AWS setups with minimal configuration.
 - Use this repo when you want modular, maintainable, and production-ready AWS infrastructure built on top of Terraform best practices.
 
-- **Terraform version** >= `0.14`
+**Terraform version** >= `0.14`
 
-## Base Modules
+## AWS Core Modules
 
 - [terraform-aws-core-modules](https://github.com/mishalshah92/terraform-aws-core-modules)
 
