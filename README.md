@@ -25,6 +25,7 @@ without any external framework.
 
 ## Modules
 
+- [chartmuseum](terraform/chartmuseum)
 - [client-vpn-endpoint](terraform/client-vpn-endpoint)
 - [db-subnet-groups](terraform/db-subnet-groups)
 - [docdb](terraform/docdb)
