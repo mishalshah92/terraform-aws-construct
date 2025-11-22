@@ -14,7 +14,7 @@ locals {
 }
 
 module "db_subnet" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-subnet?ref=1.4"
+  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-subnet?ref=0.1"
 
   for_each = var.db_subnets
 
@@ -40,7 +40,7 @@ module "db_subnet" {
 }
 
 module "db_rt" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-route-table?ref=1.4"
+  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-route-table?ref=0.1"
 
   name   = local.db_subnet_rt_name
   vpc_id = module.vpc.vpc_id

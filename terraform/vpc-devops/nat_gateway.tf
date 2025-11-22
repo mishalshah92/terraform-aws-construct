@@ -1,5 +1,5 @@
 module "nat_gateway" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/vpc-nat-gateway?ref=master"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/vpc-nat-gateway?ref=0.1"
 
   public_subnet_id = lookup(lookup(module.public_subnet, var.nat_gateway_subnet), "id")
 

@@ -3,7 +3,7 @@ locals {
 }
 
 module "redis_kms_key" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/kms-key-generator?ref=1.7"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/kms-key-generator?ref=0.1"
 
   count = local.key_count
 

@@ -18,7 +18,7 @@ resource "aws_db_parameter_group" "postgresql_parameter_group" {
 }
 
 module "postgresql" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/rds-postgresql?ref=1.9"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/rds-postgresql?ref=0.1"
 
   # General
   name                         = local.rds_name

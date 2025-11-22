@@ -1,5 +1,5 @@
 module "client-vpn-endpoint" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/client-vpn-endpoint?ref=1.2"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/client-vpn-endpoint?ref=0.1"
 
   name        = var.name
   description = "The VPN endpoint for VPC ${var.customer}. VPC ${data.aws_vpc.vpn_vpc.id}"
@@ -29,7 +29,7 @@ module "client-vpn-endpoint" {
 }
 
 module "vpn_network_association" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/client-vpn-network-association?ref=1.2"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/client-vpn-network-association?ref=0.1"
 
   for_each = toset(var.association_subnet_ids)
 
@@ -42,7 +42,7 @@ module "vpn_network_association" {
 }
 
 module "authorization_rules" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/client-vpn-authorization-rule?ref=1.2"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/client-vpn-authorization-rule?ref=0.1"
 
   for_each = data.aws_subnet.selected
 

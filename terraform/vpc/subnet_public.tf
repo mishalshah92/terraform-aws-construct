@@ -12,7 +12,7 @@ locals {
 }
 
 module "public_subnet" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-subnet?ref=1.4"
+  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-subnet?ref=0.1"
 
   for_each = var.public_subnets
 

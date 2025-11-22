@@ -19,7 +19,7 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 module "ec2_launch_template" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/ec2-launch-template?ref=1.8"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/ec2-launch-template?ref=0.1"
 
   name        = var.name
   description = var.description

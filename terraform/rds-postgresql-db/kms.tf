@@ -1,5 +1,5 @@
 module "postgresql_kms_key" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/kms-key-generator?ref=1.7"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/kms-key-generator?ref=0.1"
 
   customer_master_key_spec = var.customer_master_key_spec
   description              = "This key is for RDS ${var.name}"

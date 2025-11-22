@@ -13,7 +13,7 @@ locals {
 }
 
 module "app_subnet" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/vpc-subnet?ref=master"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/vpc-subnet?ref=0.1"
 
   for_each = var.app_subnets
 
@@ -39,7 +39,7 @@ module "app_subnet" {
 }
 
 module "app_rt" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/vpc-route-table?ref=master"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/vpc-route-table?ref=0.1"
 
   name   = local.app_subnet_rt_name
   vpc_id = module.vpc.vpc_id

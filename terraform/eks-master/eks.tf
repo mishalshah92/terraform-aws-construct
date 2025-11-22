@@ -1,5 +1,5 @@
 module "eks-cluster-master" {
-  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/eks-master?ref=1.1"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//src/eks-master?ref=0.1"
 
   cluster_name            = var.name
   cluster_vpc_id          = data.aws_vpc.vpc.id
