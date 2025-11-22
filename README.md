@@ -37,6 +37,7 @@ without any external framework.
 - [iam-policies](terraform/iam-policies)
 - [iam-roles](terraform/iam-roles)   
 - [iam-users](terraform/iam-users)
+- [k8s-metrics-server](terraform/k8s-metrics-server)
 - [rds-postgresql-db](terraform/rds-postgresql-db)   
 - [redis-elasticache](terraform/redis-elasticache)
 - [resource-group](terraform/resource-group)
