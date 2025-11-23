@@ -19,7 +19,7 @@ without any external framework.
 
 **Terraform version** >= `0.14`
 
-## AWS Core Modules
+## Core Modules
 
 - [terraform-aws-core-modules](https://github.com/mishalshah92/terraform-aws-core-modules)
 
@@ -125,8 +125,7 @@ Make sure you have that environment following directory structure.
 
 ### Maintainer
 
-Maintained by Mishal Shah
-📧 mishalshah92@gmail.com
+Maintained by Mishal Shah -- _mishalshah92@gmail.com_
 
 ### Releases
 
