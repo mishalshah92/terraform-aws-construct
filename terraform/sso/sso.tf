@@ -1,5 +1,5 @@
 module "sso" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/sso?ref=2.0"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//terraform/sso?ref=2.0"
 
   for_each = var.permission_sets
 

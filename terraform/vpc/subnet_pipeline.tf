@@ -13,7 +13,7 @@ locals {
 }
 
 module "pipeline_subnet" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-subnet?ref=0.1"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//terraform/vpc-subnet?ref=0.1"
 
   for_each = var.pipeline_subnets
 
@@ -39,7 +39,7 @@ module "pipeline_subnet" {
 }
 
 module "pipeline_rt" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-route-table?ref=0.1"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//terraform/vpc-route-table?ref=0.1"
 
   name   = local.pipeline_subnet_rt_name
   vpc_id = module.vpc.vpc_id

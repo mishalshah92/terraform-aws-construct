@@ -3,7 +3,7 @@ locals {
 }
 
 module "vpc-peering" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-peering?ref=0.1"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//terraform/vpc-peering?ref=0.1"
 
   name        = local.name
   vpc_id      = var.vpc_id

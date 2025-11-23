@@ -1,5 +1,5 @@
 module "public_igw" {
-  source = "git::https://github.com/cloudops92/terraform-aws-modules//terraform/vpc-internet-gateway?ref=0.1"
+  source = "git::https://github.com/mishalshah92/terraform-aws-core-modules.git//terraform/vpc-internet-gateway?ref=0.1"
 
   vpc_id = module.vpc.vpc_id
 
